@@ -91,9 +91,7 @@ public class MainActivity<publlc> extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent().setClass(getApplicationContext(),Dashboard.class));
-                finish();
-                //doLogin(Name.getText().toString(),Password.getText().toString());
+                doLogin(Name.getText().toString(),Password.getText().toString());
                 //validate(Name.getText().toString(), Password.getText().toString());
             }
         });
@@ -145,7 +143,6 @@ public class MainActivity<publlc> extends AppCompatActivity {
                                         finish();
                                     }
                                 });
-
                             }
                             else{
                                 h.post(new Runnable() {
