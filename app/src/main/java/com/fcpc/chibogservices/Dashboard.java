@@ -62,7 +62,7 @@ public class Dashboard extends AppCompatActivity {
         h = new Handler(this.getMainLooper());
 
         initFAB();
-        updateBalance();
+        //updateBalance();
     }
 
     private void updateBalance(){

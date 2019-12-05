@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Dashboard"
-    tools:showIn="@layout/activity_dashboard">
+    tools:showIn="@layout/activity_dashboard"
+    android:background="@drawable/canteenbg">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,18 +18,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:paddingTop="0sp">
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Chibog!"
-                android:textSize="36sp"
+                android:paddingTop="5sp"
+                android:text="Home"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textSize="80sp"
                 android:textStyle="bold"
                 android:typeface="serif"
-                app:fontFamily="casual" />
+                app:fontFamily="@font/contrail_one" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -36,10 +41,11 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="Balance:"
+                android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:typeface="serif"
-                app:fontFamily="sans-serif-medium" />
+                app:fontFamily="@font/contrail_one" />
 
             <TextView
                 android:id="@+id/tvBalance"
@@ -47,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="0"
+                android:textColor="#E61A1A"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -56,14 +63,37 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="Recently Purchased:"
+                android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:typeface="serif"
-                app:fontFamily="sans-serif-medium" />
+                app:fontFamily="@font/contrail_one" />
 
             <ListView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="Top Meals of the Day"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/contrail_one" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
+                tools:ignore="MissingConstraints">
+
+            </androidx.viewpager.widget.ViewPager>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

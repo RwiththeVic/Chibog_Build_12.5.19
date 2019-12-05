@@ -26,6 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
+                android:paddingTop="20dp"
                 android:text="Home"
                 android:textColor="#000000"
                 android:textSize="54sp"
@@ -38,7 +39,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:gravity="center_horizontal"
-                android:paddingTop="30dp"
+                android:paddingTop="22dp"
                 android:text="Current Balance:"
                 android:textColor="#000000"
                 android:textSize="36sp"
@@ -103,9 +104,9 @@
                 app:fontFamily="@font/contrail_one" />
 
             <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPager"
+                android:id="@+id/viewPagerx"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="181dp"
                 tools:ignore="MissingConstraints">
 
             </androidx.viewpager.widget.ViewPager>
@@ -117,7 +118,7 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="16dp"
         android:text="Copyright © 2019 Arvic Cruz Management"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -147,10 +148,10 @@
         app:fabCustomSize="75dp"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        app:layout_constraintVertical_bias="0.717"
+        app:layout_constraintVertical_bias="0.17"
         app:srcCompat="@drawable/dinner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

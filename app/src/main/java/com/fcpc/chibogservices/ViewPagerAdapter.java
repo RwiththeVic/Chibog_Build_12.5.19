@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
@@ -38,6 +39,10 @@ public class ViewPagerAdapter extends PagerAdapter {
         View view = layoutInflater.inflate(R.layout.custom_layout, null);
         ImageView imageView = (ImageView) view.findViewById(R.id.imageView2);
         imageView.setImageResource(images[position]);
+
+        TextView positionx = view.findViewById(R.id.textView15);
+
+        positionx.setText(Integer.valueOf(position).toString());
 
         ViewPager vp = (ViewPager) container;
         vp.addView(view, 0);
